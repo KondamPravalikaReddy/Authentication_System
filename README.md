@@ -39,7 +39,9 @@ Prerequisites
 
 Installation:
 
+npm init -y
 npm install express jsonwebtoken bcryptjs body-parser
+
 Start the server:
 
 node server.js
