@@ -1,5 +1,4 @@
 // Multi-Role Authentication System
-
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
@@ -25,7 +24,7 @@ const users = [
   {
     id: 2,
     username: 'manager',
-    password: '$2a$10$rQ5YZZ5Z5Z5Z5Z5Z5Z5Z5O', // 'manager123' hashed
+    password: '$2b$10$heUrdSXKguOvZr24fSD1v.byo0vaPQ0jOnYMqu3u.ehzsjUa15BSm', // 'manager123' hashed
     email: 'manager@example.com',
     role: 'manager',
     permissions: ['read', 'write', 'manage_team']
@@ -33,7 +32,7 @@ const users = [
   {
     id: 3,
     username: 'user',
-    password: '$2a$10$rQ5YZZ5Z5Z5Z5Z5Z5Z5Z5O', // 'user123' hashed
+    password: '$2b$10$AwZ4gXTx8zMOka8uKiyd0e9HIrQpU8UOCflL/h5HfzWtOQN6bkc6.', // 'user123' hashed
     email: 'user@example.com',
     role: 'user',
     permissions: ['read']
@@ -475,4 +474,3 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
-
