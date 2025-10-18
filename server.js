@@ -1,5 +1,4 @@
 // Multi-Role Authentication System
-// Install dependencies: npm install express jsonwebtoken bcryptjs body-parser
 
 const express = require('express');
 const jwt = require('jsonwebtoken');
@@ -466,7 +465,7 @@ app.use((err, req, res, next) => {
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log('\n🚀 Authentication System running on port ${PORT}\n');
+  console.log('\n Authentication System running on port ${PORT}\n');
   console.log('Test Credentials:');
   console.log('================');
   console.log('Admin    - Username: admin    Password: admin123');
@@ -476,3 +475,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
